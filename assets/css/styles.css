@@ -1,0 +1,49 @@
+
+#introPage {
+    display: flex;
+    height: 100vh;
+    border: 10px solid gold;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+    .triviaGame {
+        height: 50vh;
+        display: flex;
+        border: 10px solid pink;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #introText{
+        height: 50vh;
+        display: flex;
+        border: 10px solid pink;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sp {
+        flex: 1;
+        background-color: blue;
+        width: 70%;
+    }
+    #multiPage {
+        display: none;
+    }
+    #singlePage{
+        display: none;
+
+}
+
+
+
+
+
+
+
+
