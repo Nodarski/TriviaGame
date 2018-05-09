@@ -7,9 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
+    <div id="startPage">
+            <div class="titleOfGame bigFont border">
+                Trivia Game!
+            </div>
+            <div class="startGame">
+                <h1 class="smolFont">20 questions.. 30 seconds each..<br>
+                    When you are ready press start to...<br>
+                     Start. </h1>
+                <button class="startBtn" onclick="startGame()">Start Game!</button>
+            </div>
+        
+    </div>
+    <div id="wrongPage" class="bigFont">
+WRONG
+    </div>
+    <div id="rightPage" class="bigFont">
+CORRECT!!
+    </div>
+    <div id="timeOut" class="bigFont">
+        TIMES UP BUDDY!!
+    </div>
+    <div id="winnerScreen" class="bigFont">
+    </div>
+
+    
         <div id="introPage" class="backGround border">
             <div id="triviaGame" class="upperHalf border">
                 <div class="titleOfGame bigFont border">
@@ -26,22 +52,22 @@
                 </div>
             </div>
             <div id="introText" class="lowerHalf border"> 
-                <div class="boxes ansOne border" >
+                <div class="boxes ansOne border">
+                    <h1 class="response">
+                        Answer #1 test test tesont test test test test tetst tetst!!
+                    </h1>
+                </div>
+                <div class="boxes ansTwo border">
                     <h1 class="response">
                         Answer #1 test test test test test test test tetst tetst!!
                     </h1>
                 </div>
-                <div class="boxes ansTwo border" >
+                <div class="boxes ansThree border">
                     <h1 class="response">
                         Answer #1 test test test test test test test tetst tetst!!
                     </h1>
                 </div>
-                <div class="boxes ansThree border" >
-                    <h1 class="response">
-                        Answer #1 test test test test test test test tetst tetst!!
-                    </h1>
-                </div>
-                <div class="boxes ansFour border" >
+                <div class="boxes ansFour border">
                     <h1 class="response">
                         Answer #1 test test test test test test test tetst tetst!!
                     </h1>

@@ -82,11 +82,28 @@
     font-family: 'Skranji', cursive;
 }
 .numberFont{
-    font-size: 4vw;
+    font-size: 6vw;
     color: white;
     font-family: 'Skranji', cursive;
 
 }
+.startBtn{
+    background-color: rgb(186, 2, 241); /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+        .startBtn:hover {
+        background-color: #4CAF50;
+        color: white;
+        }
 
 
 /* TEST BORDERS */
@@ -97,23 +114,81 @@
     /* border: 10px solid gold; */
 }
 
+/* PAGE ON LOAD.. START THE GAME HERE */
+/* PAGE ON LOAD.. START THE GAME HERE */
+
+#startPage{
+    z-index: 0;
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid teal;
+}
+
+
+#wrongPage {
+    z-index: 0;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid teal;
+}
+#rightPage{
+    z-index: 0;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid teal;
+}
+#timeOut {
+    z-index: 0;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid teal;
+}
+#winnerScreen{
+    z-index: 0;
+    background-color: hotpink;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid teal;
+}
 /* BACKGROUND */
 /* BACKGROUND */
 
 #introPage {
+    z-index: 1;
     display: flex;
     height: 100vh;
     align-items: flex-end;
     flex-direction: column;
-    
     border: 10px solid teal;
 
-    background: linear-gradient(0deg, #000000, #554244, #000000);
+    background: linear-gradient(0deg, #000000, #ffffff, #000000);
     background-size: 600% 600%;
 
-    -webkit-animation: bgAnimation 8s ease infinite;
-    -moz-animation: bgAnimation 8s ease infinite;
-    animation: bgAnimation 8s ease infinite;
+    animation: bgAnimation 2s ease infinite;
     }
             @-webkit-keyframes bgAnimation {
                 0%{background-position:59% 0%}
