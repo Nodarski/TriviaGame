@@ -58,11 +58,10 @@
 
 .bigFont {
     font-size: 5vw;
-    color: white;
     font-family: 'Skranji', cursive;
     animation: color-change 1s infinite;
 }
-    /* RED BLUE FLASH ANIMATIONS */
+
     /* RED BLUE FLASH ANIMATIONS */
 
         @keyframes color-change {
@@ -70,6 +69,7 @@
             50% { color: blue; }
             100% { color: red; }
         }
+
 .medFont{
     font-size: 2vw;
     color: white;
@@ -80,6 +80,12 @@
     font-size: 3vw;
     color: white;
     font-family: 'Skranji', cursive;
+}
+.numberFont{
+    font-size: 4vw;
+    color: white;
+    font-family: 'Skranji', cursive;
+
 }
 
 
@@ -99,9 +105,33 @@
     height: 100vh;
     align-items: flex-end;
     flex-direction: column;
-    background-color: black;
+    
     border: 10px solid teal;
-}
+
+    background: linear-gradient(0deg, #000000, #554244, #000000);
+    background-size: 600% 600%;
+
+    -webkit-animation: bgAnimation 8s ease infinite;
+    -moz-animation: bgAnimation 8s ease infinite;
+    animation: bgAnimation 8s ease infinite;
+    }
+            @-webkit-keyframes bgAnimation {
+                0%{background-position:59% 0%}
+                50%{background-position:42% 100%}
+                100%{background-position:59% 0%}
+            }
+            @-moz-keyframes bgAnimation {
+                0%{background-position:59% 0%}
+                50%{background-position:42% 100%}
+                100%{background-position:59% 0%}
+            }
+            @keyframes bgAnimation { 
+                0%{background-position:59% 0%}
+                50%{background-position:42% 100%}
+                100%{background-position:59% 0%}
+            }
+
+
 
 /* UPPER HALF BOX */
 /* UPPER HALF BOX */
@@ -114,7 +144,7 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
     /* border: 10px solid white; */
 }
 
