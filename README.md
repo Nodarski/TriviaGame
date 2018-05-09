@@ -1,3 +1,3 @@
 # TriviaGame
 advanced trivia game
-fun game, very diffucult questions, its basically luck.
+replace the questions with your own. automatic, no user input needed after start is pressed.

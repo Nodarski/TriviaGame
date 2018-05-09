@@ -328,6 +328,7 @@ $("#introText").on("click",".ansFour",function(){
     }
 
     else{
+        
         $('#wrongPage').css("display","flex");
         guessedInCorrect++;
         questionsLeft--;
