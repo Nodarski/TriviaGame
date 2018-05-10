@@ -179,6 +179,7 @@ function questSelect(){
             counter = 30;
             questionsLeft = 20;
             currentQuestion = -1;
+            questSelect();
 
         }, 10000);
 
